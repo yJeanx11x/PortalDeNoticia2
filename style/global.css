@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--tex-color-primary);
+  background-color: var(--bg-color);
+  font: var(--text);
+}
+
+:root {
+  /* PRODUTO */
+  --brand-color-light: #60a5fa;
+  --brand-color-dark: #1d4ed8;
+
+  /* BASE */
+  --bg-color: #0f172a;
+  --stroke-color: #1e293b;
+
+  /* Texto */
+
+  --tex-color-primary: #f1f5f9;
+  --tex-color-secondary: #cbd5e1;
+
+  /* FONTES */
+  --font-family:"Archivo", serif;
+  --h1: 800 24px/135% var(--font-family);
+  --h2: 800 16px/140% var(--font-family);
+  --h3: 800 14px/140% var(--font-family);
+  --span: 400 14px/145% var(--font-family);
+  --text: 200 14px/160% var(--font-family);
+}
+.tex-2xl {
+  font: var(--h1);
+}
+.tex-xl {
+  font: var(--h2);
+  color: var(--tex-color-primary);
+}
+.tex-lg {
+  font: var(--h3);
+}
+.tex-sm {
+  font: var(--tex-sm);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,h2,h3{
+        font: inherit;
+}
+.container{
+  max-width: 1280px;
+  padding-inline: 32px;
+  margin-inline: auto;
+}
+a:hover {
+  color: var(--brand-color-light);
+}
+ /* utilitario */
+
+ .grid{
+display: grid;
+}
+
+.grid-flow-col{
+grid-auto-flow: column;
+}
