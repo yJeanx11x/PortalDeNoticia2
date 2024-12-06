@@ -24,24 +24,24 @@ body {
   --tex-color-secondary: #cbd5e1;
 
   /* FONTES */
-  --font-family:"Archivo", serif;
+  --font-family:"Archivo", sans-serif;
   --h1: 800 24px/135% var(--font-family);
   --h2: 800 16px/140% var(--font-family);
   --h3: 800 14px/140% var(--font-family);
   --span: 400 14px/145% var(--font-family);
   --text: 200 14px/160% var(--font-family);
 }
-.tex-2xl {
+.text-2xl {
   font: var(--h1);
 }
-.tex-xl {
+.text-xl {
   font: var(--h2);
   color: var(--tex-color-primary);
 }
-.tex-lg {
+.text-lg {
   font: var(--h3);
 }
-.tex-sm {
+.text-sm {
   font: var(--tex-sm);
 }
 a {
@@ -52,6 +52,9 @@ a {
 h1,h2,h3{
         font: inherit;
 }
+img{
+  max-width: 100%;
+}
 .container{
   max-width: 1280px;
   padding-inline: 32px;
@@ -60,12 +63,17 @@ h1,h2,h3{
 a:hover {
   color: var(--brand-color-light);
 }
- /* utilitario */
-
- .grid{
-display: grid;
+main{
+  margin-top: 40px;
 }
-
-.grid-flow-col{
-grid-auto-flow: column;
+.content-tag{
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font: 500 10px/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--tex-color-primary);
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251);
 }
